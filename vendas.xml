@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE vendas SYSTEM "vendas.dtd">
+
+<!--
+
+Exemplo de aplicação:
+
+Uma concessionária de veículos que possui filiais em várias cidades do Brasil precisa armazenar informações dos clientes, das vendas de veículos, além da filial que realizou a venda.
+
+-->
+
+<venda nome_concessionaria='Multimarcas' endereco_concessionaria='Av. Getúlio Vargas, 2800' cidade_concessionaria='Concórdia' estado_concessionaria='Santa Catarina'>
+	<informacoes_cliente>
+		<nome>Luiz</nome>
+		<rg>9218281</rg>
+		<cpf>21211812</cpf>
+		<cnh>93717837137177813</cnh>
+		<categoria_cnh>B</categoria_cnh>
+		<endereco tipo_endereco='residencial'>
+			<rua>Rua Pedro II</rua>
+			<numero>278</numero>
+			<bairro>Serra Alta</bairro>
+			<cidade>Chapecó</cidade>
+			<estado>SC</estado>
+			<cep>89723-000</cep>
+		</endereco>
+		<contato>
+			<telefone>3416-0010</telefone>
+			<celular>9875-2222</celular>
+			<email>luiz@terra.com.br</email>
+		</contato>
+
+	</informacoes_cliente>
+
+	<informacoes_venda numero_venda="08764209922">
+		<data_venda>20/01/2018</data_venda>
+		<valor_venda>14.500,00</valor_venda>
+		<valor_tabela_fipe>15.700,00</valor_tabela_fipe>
+		
+		<veiculo>
+			<marca>Chevrolet</marca>
+			<modelo>Celta</modelo>
+			<placa>MKN-9184</placa>
+			<municipio>Florianópolis</municipio>
+			<estado>SC</estado>
+			<tipo>Usado</tipo>
+			<combustivel>Gasolina / Álcool</combustivel>
+			<motor>1.4</motor>
+			<ano>2010</ano>
+			<km>108503</km>
+			<opcionais>
+				<item>Travas elétricas</item>
+				<item>Rádio FM</item>
+				<item>Ar condicionado</item>
+			</opcionais>
+			<observacoes>Arranhão no parachoque dianteiro e vidro traseiro trincado</observacoes>
+		</veiculo>
+
+	</informacoes_venda>
+
+</venda>

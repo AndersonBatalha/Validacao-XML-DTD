@@ -1,0 +1,11 @@
+Atividade prática
+
+- Escolha um assunto ou aplicação hipotética
+- Desenvolver um mecanismo para interoperabilidade com XML e DTD
+- Para isso:
+	1) Crie a DTD, descrevendo um tipo de documento esperado pela aplicação
+	2) Crie um documento XML de exemplo que atenda à DTD
+	3) Implemente uma aplicação que faça:
+		a) A validação do documento XML
+		b) Carregue os dados (DOM) e apresente-os
+- Tão logo tenha criado sua DTD, disponibilize para que os colegas criem um XML que deverá ser testado na sua aplicação

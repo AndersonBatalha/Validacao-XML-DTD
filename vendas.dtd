@@ -1,0 +1,48 @@
+<!ELEMENT venda (informacoes_cliente, informacoes_venda)>
+<!ATTLIST venda nome_concessionaria CDATA #REQUIRED>
+<!ATTLIST venda endereco_concessionaria CDATA #REQUIRED>
+<!ATTLIST venda cidade_concessionaria CDATA #REQUIRED>
+<!ATTLIST venda estado_concessionaria CDATA #REQUIRED>
+
+<!ELEMENT informacoes_cliente (nome, rg, cpf, cnh, categoria_cnh, endereco+, contato)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT rg (#PCDATA)>
+<!ELEMENT cpf (#PCDATA)>
+<!ELEMENT cnh (#PCDATA)>
+<!ELEMENT categoria_cnh (#PCDATA)>
+
+<!ELEMENT endereco (rua, numero, bairro, cidade, estado, cep)>
+<!ELEMENT rua (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT bairro (#PCDATA)>
+<!ELEMENT cidade (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT cep (#PCDATA)>
+<!ATTLIST informacoes_cliente tipo_endereco CDATA #IMPLIED>
+
+<!ELEMENT contato (telefone*, celular*, email*)>
+<!ELEMENT telefone (#PCDATA)>
+<!ELEMENT celular (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT informacoes_venda (data_venda?, valor_venda, valor_tabela_fipe, veiculo+)>
+<!ATTLIST informacoes_venda numero_venda CDATA #REQUIRED>
+<!ELEMENT data_venda (#PCDATA)>
+<!ELEMENT valor_venda (#PCDATA)>
+<!ELEMENT valor_tabela_fipe (#PCDATA)>
+
+<!ELEMENT veiculo (marca, modelo, placa, municipio, estado, tipo, combustivel, motor, ano, km, opcionais*, observacoes?)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT placa (#PCDATA)>
+<!ELEMENT municipio (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT combustivel (#PCDATA)>
+<!ELEMENT motor (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT km (#PCDATA)>
+<!ELEMENT observacoes (#PCDATA)>
+
+<!ELEMENT opcionais (item+)>
+<!ELEMENT item (#PCDATA)>
